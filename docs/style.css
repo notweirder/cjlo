@@ -55,7 +55,7 @@ a.donate-link {
 }
 
 .bundle {
-	/* border-style: dashed; */
+	border-color: grey;
 	padding-bottom: 0em;
 	width: 15em;
 	display: flex;
@@ -104,8 +104,10 @@ a.donate-link {
 	padding-top: 0%;
 	margin: 1%;
 	/* background: linear-gradient(transparent 50%,rgb(239, 237, 229) 50%); */
-	background-color: rgb(239, 237, 229);
+	background-color: rgb(255, 255, 255);
 	padding-bottom: 2%;
+	border-style: solid;
+	border-color: grey;
 }
 
 .event-container h1{
@@ -244,7 +246,7 @@ h1{
 }
 
 h4{
-	font-family: 'Arkipelago';
+	font-family: 'Courier New', Courier, monospace;
 	text-align: center;
 	font-size: 2.5rem;
 	margin-bottom: 0.67em;
