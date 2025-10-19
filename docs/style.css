@@ -57,32 +57,75 @@ a.donate-link {
 .bundle {
 	padding-bottom: 1rem;
 	width: 15em;
-	height: 20em;
+	height: 18em;
 	display: flex;
+	margin: 2%;
 	flex-direction: column;
-	padding: 2%;
 	position: relative;
 	justify-content: center;
 	align-content: center;
-	margin: 1em;
 	border-radius: 8%;
+	border-style: dashed;
 }
 
 .bundle p {
-	border-style: dashed;
 	padding: 1em;
 	font-size: 90%;
-	height:10em;
+	margin: 0;
 
 }
 
 .bundle img{
-	border: 10%;
-	width:90%;
+	width:80%;
 	align-self: center;
 	justify-self: end;
 
 }
+
+#event-parent{
+	width:95vw;
+	height:200vh;
+	display: flex;
+	flex-flow: wrap;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-self: center;
+	align-self: center;
+	margin: auto;
+}
+
+.event-container{
+	display: flex;
+	flex-flow: column;
+	width: 45vh;
+	height:90vh;
+
+	background-color: rgb(228, 228, 198);
+	align-items: center;
+	margin:2em;
+	padding-top: 2%;
+	border-radius: 5%;
+}
+
+.event-container h1{
+	margin: 0em;
+	position: relative;
+}
+
+.event-container h4{
+	font-family: inherit;
+	font-size: large;
+}
+
+.event-container img{
+	z-index: 2;
+	top:0px;
+	position: relative;
+	width:80%;
+}
+
+
 
 
 #donate-bundles{
@@ -112,24 +155,50 @@ img{
 }
 
 #donate-gifts {
-	background-image: url('img/2024/donate_for_gifts_unhovered.png');
+	background-image: url('img/2025/donate_for_gifts_unhovered.png');
 }
 
 #donate-gifts:hover {
-	background-image: url('img/2024/donate_for_gifts_hovered.png');
+	background-image: url('img/2025/donate_for_gifts_hovered.png');
 }
 
 #donate-tax {
-	background-image: url('img/2024/donate_for_tax_receipt_unhovered.png');
+	background-image: url('img/2025/donate_for_tax_receipt_unhovered.png');
 }
 
 #donate-tax:hover {
-	background-image: url('img/2024/donate_for_tax_receipt_hovered.png');
+	background-image: url('img/2025/donate_for_tax_receipt_hovered.png');
 }
 
-#raffle-prizes {
-	font-size: 2.25rem;
+#raffle-parent {
+	display: flex;
 	font-weight: bold;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: start;
+	flex-flow: row wrap;
+	flex-direction: row;
+
+}
+
+.raffle-child{
+	display: grid;
+	place-items: center;
+	width:10em;
+	height:8em;
+	font-size: 1em;
+	padding: 0.5em;
+	margin: 0.3em;
+	border-style: solid;
+	border-color: grey;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight:500;
+
+}
+
+#raffle-child p{
+	display: flex;
+	margin-inline: auto;
 }
 
 div.caption {
