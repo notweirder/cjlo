@@ -1,6 +1,6 @@
 body{
 	font-family: sans-serif;
-	font-size: 2rem; 
+	font-size: 2vh; 
 	text-align: center;
 	color: black;
 	background-color: #fff;
@@ -8,9 +8,18 @@ body{
 	    font-family: 'Courier Prime';font-size: 22px;
 }
 
+a{
+	margin:0%;
+	padding: 0%;
+}
+
+body p{
+	font-size: 2vh;
+}
+
 @media screen and (max-width: 400px) {
   body {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -46,18 +55,28 @@ a.donate-link {
 	text-decoration: none;
 }
 
-.donate {
-	width: 240px;
-	height: 180px;
-	padding: 0 20px;
-	background-repeat: no-repeat;
-	display: inline-block;
+
+#donate-bundles{
+	align-self: center;
+	align-items:start;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 95vw;
+
 }
 
+
+
+.bundle span {
+	line-height: 1rem;
+}
+
+
+
 .bundle {
-	border-color: grey;
 	padding-bottom: 0em;
-	width: 15em;
+	width: 30vh;
 	display: flex;
 	margin: 2%;
 	flex-direction: column;
@@ -68,7 +87,7 @@ a.donate-link {
 }
 
 .bundle p {
-	font-size: 90%;
+	font-size: 2vh;
 	padding-left: 1em;
 	padding-right: 1em;
 	margin: 0;
@@ -82,23 +101,33 @@ a.donate-link {
 
 }
 
+.donate {
+	width: 240px;
+	height: 180px;
+	padding: 0 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
 #event-parent{
 	width:95vw;
 	height:200vh;
 	display: flex;
 	flex-flow: wrap;
 	flex-direction:row;
-	flex-wrap: wrap;
 	justify-content: center;
 	justify-self: center;
 	align-self: center;
-	margin: auto;
+	margin:auto;
 }
+
+
 
 .event-container{
 	display: flex;
 	flex-flow: column;
 	width: 50vh;
+	position: relative;
 	height:auto;
 	align-items: center;
 	padding-top: 0%;
@@ -108,11 +137,24 @@ a.donate-link {
 	padding-bottom: 2%;
 	border-style: solid;
 	border-color: grey;
+	
+}
+
+.event-container img:hover{
+	box-shadow: 0 0 20px green;
+}
+
+.event-container div{
+		display: inline-block;
+		margin: auto;
+		align-self: flex-end;
+		justify-self: end;
+			position: relative;
+
 }
 
 .event-container h1{
-		font-size: .5vh;
-	padding: 0em;
+	font-size: .5vh;
 	position: relative;
 }
 .event-container p{
@@ -121,35 +163,22 @@ a.donate-link {
 	margin-bottom: 0;
 }
 .event-container h4{
-			font-size: 2.5vh;
+	font-size: 2.5vh;
 	font-family: inherit;
 }
 
-.event-container img{
-	margin: auto;
-	align-self: flex-end;
-	justify-self: end;
-	position: relative;
-	width:100%;
+
+.event-container a{
+	display: inline-block;
+		margin: auto;
+		align-self: flex-end;
+		justify-self: end;
+			position: relative;
 }
 
 
 
 
-#donate-bundles{
-	align-self: center;
-	align-items:start;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 95vw;
-}
-
-
-
-.bundle span {
-	line-height: 1rem;
-}
 
 #topbar {
   display: flex;
@@ -192,9 +221,9 @@ img{
 .raffle-child{
 	display: grid;
 	place-items: center;
-	width:10em;
-	height:8em;
-	font-size: 1em;
+	width:25vh;
+	height:20vh;
+	font-size: 2vh;
 	padding: 0.25em;
 	margin: 0.3em;
 	border-style: solid;
@@ -204,7 +233,8 @@ img{
 
 }
 
-#raffle-child p{
+.raffle-child p{
+	font-size: 2vh;
 	display: flex;
 	margin-inline: auto;
 }
